@@ -3,11 +3,19 @@ const nextConfig = {
   experimental: {
     appDir: true,
   },
-  publicRuntimeConfig: {
-    CONTENTFUL_AUTH: process.env.CONTENTFUL_AUTH,
-    CONTENTFUL_PREVIEW_AUTH: process.env.CONTENTFUL_PREVIEW_AUTH,
-    CONTENTFUL_ENVIRONMENT: process.env.CONTENTFUL_ENVIRONMENT,
-    CONTENTFUL_SPACE_ID: process.env.CONTENTFUL_SPACE_ID,
+  webpack: (config) => {
+
+    config.module.rules.push({
+      test: /\.(graphql|gql)$/,
+      exclude: /node_modules/,
+      use: [
+        {
+          loader: 'graphql-tag/loader'
+        }
+      ]
+    });
+    
+    return config;
   }
 }
 
