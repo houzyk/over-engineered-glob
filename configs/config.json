@@ -1,0 +1,12 @@
+{
+  "pages": {
+    "home": true,
+    "about": false,
+    "articles": false,
+    "privacy": false,
+    "sitemap": false,
+    "meta": false,
+    "projects": false,
+    "readingList": false
+  }
+}
