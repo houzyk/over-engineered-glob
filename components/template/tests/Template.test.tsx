@@ -1,7 +1,6 @@
-import React from "react";
 import { render } from '@testing-library/react';
-import Template from '../src/Template';
+import TemplateComponent from '../src/Template';
 
-test('renders Template Component', () => {
-  render(<Template />);
+test('Renders Template Component', () => {
+  render(<TemplateComponent />);
 });

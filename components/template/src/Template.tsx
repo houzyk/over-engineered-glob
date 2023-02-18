@@ -1,10 +1,5 @@
-import React from "react";
-
 const Template = () => {
-  return (
-    <>
-    </>
-  );
+  return (<></>);
 }
 
 export default Template;

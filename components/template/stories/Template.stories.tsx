@@ -1,10 +1,10 @@
 //@ts-nocheck
 import { Meta } from '@storybook/html';
-import Template from '../src/Template';
+import TemplateComponent from "../src/Template";
 
 export default {
-  component: Template,
-  title: 'Template Story',
+  component: TemplateComponent,
+  title: 'TemplateComponent Story',
   parameters: {
     docs: {
       description: {}
@@ -13,6 +13,6 @@ export default {
   argTypes: {}
 } as Meta;
 
-const StoryBookTemplate = () => (<Template />);
+const StorybookTemplate = (args) => (<TemplateComponent {...args} />);
 
-export const TemplateStory = StoryBookTemplate.bind({});
+export const TemplateComponentStory = StorybookTemplate.bind({});

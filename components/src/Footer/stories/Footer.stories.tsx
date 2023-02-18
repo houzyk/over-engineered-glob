@@ -1,6 +1,6 @@
 //@ts-nocheck
 import { Meta } from '@storybook/html';
-import Footer from '../src/Footer';
+import Footer from "../src/Footer";
 
 export default {
   component: Footer,
@@ -13,6 +13,6 @@ export default {
   argTypes: {}
 } as Meta;
 
-const Template = () => (<Footer />);
+const StorybookTemplate = (args) => (<Footer {...args} />);
 
-export const FooterStory = Template.bind({});
+export const FooterStory = StorybookTemplate.bind({});

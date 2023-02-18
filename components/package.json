@@ -1,9 +1,11 @@
 {
-  "name": "components",
-  "version": "0.1.0",
-  "private": true,
+  "name": "over-engineered-glob-components",
+  "author": "Houzair Koussa",
+  "version": "0.1.5",
+  "files": [
+    "src/**/src/*.tsx"
+  ],
   "dependencies": {
-    "@storybook/source-loader": "^6.5.16",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -53,9 +55,6 @@
       "last 1 safari version"
     ]
   },
-  "workspaces": [
-    "src/*"
-  ],
   "devDependencies": {
     "@storybook/addon-actions": "^6.5.16",
     "@storybook/addon-essentials": "^6.5.16",
@@ -68,7 +67,6 @@
     "@storybook/react": "^6.5.16",
     "@storybook/testing-library": "^0.0.13",
     "babel-plugin-named-exports-order": "^0.0.2",
-    "lerna": "^5.4.3",
     "prop-types": "^15.8.1",
     "webpack": "^5.75.0"
   }
