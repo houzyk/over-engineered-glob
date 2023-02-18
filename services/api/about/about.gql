@@ -1,0 +1,13 @@
+query {
+  aboutEndPointCollection {
+    items {
+      name
+      company
+      job
+      location {
+        lat
+        lon
+      }
+    }
+  }
+}
