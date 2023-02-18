@@ -1,4 +1,5 @@
 {
+  "localUrl": "http://localhost:3000",
   "pages": {
     "home": true,
     "about": false,
