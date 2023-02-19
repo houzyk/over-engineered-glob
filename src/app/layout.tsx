@@ -1,4 +1,4 @@
-import StyledComponentsRegistry from '../../lib/styled-components-registry';
+import StyledComponentsRegistry from '../../utils/styled-components/registry';
 
 export default function RootLayout({
   children,
